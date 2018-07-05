@@ -25,20 +25,20 @@
     <li>
       <div class="divider"></div>
     </li>
-    <li>
-      <a class="waves-effect">
+    <li id="aboutmebtn">
+      <a class="waves-effect" onclick="showPage(this, 'aboutme')">
         <i class="material-icons">person_outline</i>About Me</a>
     </li>
-    <li>
-      <a class="waves-effect">
+    <li id="resumebtn">
+      <a class="waves-effect" onclick="showPage(this, 'resume')">
         <i class="material-icons">event_note</i>Resume</a>
     </li>
-    <li>
-      <a class="waves-effect">
+    <li id="portofliobtn">
+      <a class="waves-effect" onclick="showPage(this, 'portfolio')">
         <i class="material-icons">code</i>Portfolio</a>
     </li>
-    <li>
-      <a class="waves-effect">
+    <li id="contactbtn">
+      <a class="waves-effect" onclick="showPage(this, 'contact')">
         <i class="material-icons">phone_iphone</i>Contact</a>
     </li>
   </ul>
@@ -46,16 +46,25 @@
     <i class="material-icons white-text medium">menu</i>
   </a>
 
+  <div class="container" id="aboutme">
+    <h1 class="center">About me</h1>
+  </div>
 
+  <div class="container" id="resume">
+    <h1 class="center">resume</h1>
+  </div>
+
+  <div class="container" id="portfolio">
+    <h1 class="center">portfolio</h1>
+  </div>
+
+  <div class="container" id="contact">
+    <h1 class="center">contact</h1>
+  </div>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const sideNav = document.querySelector('.sidenav');
-      M.Sidenav.init(sideNav, {});
-    });
-  </script>
+  <script src="main.js"></script>
 </body>
 
 </html>
