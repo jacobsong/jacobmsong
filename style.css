@@ -1,6 +1,25 @@
+body {
+  background-color: steelblue;
+  padding-left: 300px;
+}
+
 .profile {
   max-height: 200px !important;
   height: auto !important;
   width: auto !important;
   margin: auto !important;
+}
+
+.name {
+  font-family: "Coda Caption", sans-serif !important;
+}
+
+.sidenav-clicked {
+  background-color: steelblue;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    padding-left: 0;
+  }
 }
