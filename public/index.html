@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Knewave|Merriweather|Permanent+Marker|Righteous|Russo+One|Teko" rel="stylesheet">
 </head>
 
-<body>
-  <ul id="slide-out" class="sidenav sidenav-fixed grey lighten-4">
+<body class="grey lighten-5">
+  <ul id="slide-out" class="sidenav sidenav-fixed grey darken-4">
     <li>
-      <div class="user-view center">
+      <div class="user-view center white-text">
         <img class="circle profile" src="img/profile2.png">
         <span class="name">Jacob Song</span>
         <span class="email">Software Developer</span>
@@ -27,24 +27,24 @@
       <div class="divider"></div>
     </li>
     <li id="aboutmebtn">
-      <a class="waves-effect sidenav-close" onclick="showPage('aboutmebtn', 'aboutme')">
-        <i class="material-icons">person_outline</i>About Me</a>
+      <a class="waves-effect sidenav-close white-text" onclick="showPage('aboutmebtn', 'aboutme')">
+        <i class="material-icons white-text">person_outline</i>About Me</a>
     </li>
     <li id="resumebtn">
-      <a class="waves-effect sidenav-close" onclick="showPage('resumebtn', 'resume')">
-        <i class="material-icons">event_note</i>Resume</a>
+      <a class="waves-effect sidenav-close white-text" onclick="showPage('resumebtn', 'resume')">
+        <i class="material-icons white-text">event_note</i>Resume</a>
     </li>
     <li id="portfoliobtn">
-      <a class="waves-effect sidenav-close" onclick="showPage('portfoliobtn', 'portfolio')">
-        <i class="material-icons">code</i>Portfolio</a>
+      <a class="waves-effect sidenav-close white-text" onclick="showPage('portfoliobtn', 'portfolio')">
+        <i class="material-icons white-text">code</i>Portfolio</a>
     </li>
     <li id="contactbtn">
-      <a class="waves-effect sidenav-close" onclick="showPage('contactbtn', 'contact')">
-        <i class="material-icons">phone_iphone</i>Contact</a>
+      <a class="waves-effect sidenav-close white-text" onclick="showPage('contactbtn', 'contact')">
+        <i class="material-icons white-text">phone_iphone</i>Contact</a>
     </li>
   </ul>
   <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
-    <i class="material-icons white-text medium">menu</i>
+    <i class="material-icons grey-text text-darken-4 medium">menu</i>
   </a>
 
   <div class="container" id="aboutme">
@@ -57,7 +57,35 @@
   </div>
 
   <div class="container" id="resume">
-    <h1 class="center">resume</h1>
+    <div class="card grey lighten-4">
+      <div class="card-title">
+        <h1 class="center">Resume</h1>
+      </div>
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim in voluptatibus porro alias perspiciatis cumque nulla
+          fugit nobis, corrupti mollitia.</p>
+      </div>
+    </div>
+    <ul class="collapsible expandable">
+      <li class="active">
+        <div class="collapsible-header">Languages</div>
+        <div class="collapsible-body">
+          <p>Java Python SQL</p>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">Tools</div>
+        <div class="collapsible-body">
+          <p>Eclipse JBoss</p>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">Certifications</div>
+        <div class="collapsible-body">
+          <p>CompTIA Security+ DoD Secret Security Clearance</p>
+        </div>
+      </li>
+    </ul>
   </div>
 
   <div class="container" id="portfolio">

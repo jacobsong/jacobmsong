@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
   const sideNav = document.querySelector(".sidenav");
-  M.Sidenav.init(sideNav, {});
+  const collapsible = document.querySelector(".collapsible.expandable");
+
+  M.Sidenav.init(sideNav);
+  M.Collapsible.init(collapsible, { accordion: false });
 
   showPage("aboutmebtn", "aboutme");
 });
