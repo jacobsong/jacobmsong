@@ -1,0 +1,22 @@
+{
+  "name": "jacobmsong",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobsong/jacobmsong.git"
+  },
+  "author": "Jacob Song",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobsong/jacobmsong/issues"
+  },
+  "homepage": "https://github.com/jacobsong/jacobmsong#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
