@@ -11,14 +11,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Knewave|Merriweather|Permanent+Marker|Righteous|Russo+One|Teko" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Righteous" rel="stylesheet">
 </head>
 
-<body class="grey lighten-5">
+<body class="grey lighten-4">
+
+  <!-- Sidenav -->
   <ul id="slide-out" class="sidenav sidenav-fixed grey darken-4">
     <li>
       <div class="user-view center white-text">
-        <img class="circle profile" src="img/profile2.png">
+        <img class="profile" src="img/profile2.png">
         <span class="name">Jacob Song</span>
         <span class="email">Software Developer</span>
       </div>
@@ -46,59 +48,163 @@
   <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
     <i class="material-icons grey-text text-darken-4 medium">menu</i>
   </a>
+  <!-- Sidenav - end -->
 
+  <!-- About Me -->
   <div class="container" id="aboutme">
-    <div class="card grey">
+    <div class="card">
       <h1 class="center">About me</h1>
       <div class="card-content">
         <p>My name is jacob</p>
       </div>
     </div>
   </div>
+  <!-- About Me - end -->
 
+  <!-- Resume -->
   <div class="container" id="resume">
-    <div class="card grey lighten-4">
-      <div class="card-title">
-        <h1 class="center">Resume</h1>
+    <blockquote>Experience</blockquote>
+    <div class="row grey-text text-darken-3">
+      <div class="col s12 m12 l6">
+        <div class="card card-min hoverable">
+          <img class="work-logo responsive-img" src="img/lockheed-martin.png">
+          <div class="card-content pt0">
+            <span class="card-title">2014 - 2017</span>
+            <ul class="browser-default list-padding">
+              <li>Worked on GCSS-MC (custom Oracle EBS for the US Marine Corps)</li>
+              <li>Used PL/SQL for development and modified Oracle design documents</li>
+              <li>Used Subversion for version control and Toad for IDE</li>
+              <li>Utilized Agile methodologies such as Sprint estimating/planning, daily standups, and 2 week sprints</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="card-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim in voluptatibus porro alias perspiciatis cumque nulla
-          fugit nobis, corrupti mollitia.</p>
+      <div class="col s12 m12 l6">
+        <div class="card card-min hoverable">
+          <img class="work-logo responsive-img" src="img/hpe.jpg">
+          <div class="card-content pt0">
+            <span class="card-title">2017 - Present</span>
+            <ul class="browser-default list-padding">
+              <li>Worked on RZ2 (recruiting web application for the US Army)</li>
+              <li>Implemented feature requests and bug fixes in Java EE on a Linux development environment</li>
+              <li>Utilized tools including Eclipse, Maven, SoapUI and JBoss</li>
+              <li>Implemented front-end changes using JSP, HTML, CSS, and JavaScript</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <ul class="collapsible expandable">
-      <li class="active">
-        <div class="collapsible-header">Languages</div>
-        <div class="collapsible-body">
-          <p>Java Python SQL</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Tools</div>
-        <div class="collapsible-body">
-          <p>Eclipse JBoss</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Certifications</div>
-        <div class="collapsible-body">
-          <p>CompTIA Security+ DoD Secret Security Clearance</p>
-        </div>
-      </li>
-    </ul>
-  </div>
 
+    <blockquote>Education</blockquote>
+    <div class="row grey-text text-darken-3">
+      <div class="col s12 m4 l3">
+        <div class="card hoverable">
+          <img class="edu-logo responsive-img" src="img/cofc.jpg">
+          <div class="card-content pt0">
+            <span class="card-title">2010 - 2014</span>
+            <p>BS Computer Science</p>
+            <p>SC LIFE Scholarship</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <blockquote>Skills</blockquote>
+    <div class="row grey-text text-darken-3">
+      <ul class="collapsible expandable center-align">
+        <li class="active">
+          <div class="collapsible-header">
+            <i class="material-icons">arrow_drop_down</i>Languages
+          </div>
+          <div class="collapsible-body">
+            <div class="row">
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="responsive-img" src="img/html5-logo.png">
+                  <span>HTML</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="responsive-img" src="img/css3-logo.png">
+                  <span>CSS</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="responsive-img" src="img/javascript-logo.png">
+                  <span>JavaScript</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="responsive-img" src="img/java-logo.png">
+                  <span>Java</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="responsive-img" src="img/python-logo.png">
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="responsive-img" src="img/sql.png">
+                  <span>SQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">arrow_drop_down</i>Tools
+          </div>
+          <div class="collapsible-body">
+            <p>Eclipse JBoss VSCode Postman SoapUI Maven Subversion Git Bash</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">arrow_drop_down</i>Frameworks/Libraries
+          </div>
+          <div class="collapsible-body">
+            <p>Hibernate Spring React Redux Node Express Mongoose</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">arrow_drop_down</i>Certifications
+          </div>
+          <div class="collapsible-body">
+            <p>CompTIA Security+ DoD Secret Security Clearance</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Resume - end -->
+
+  <!-- Portfolio -->
   <div class="container" id="portfolio">
     <h1 class="center">portfolio</h1>
   </div>
+  <!-- Portfolio - end -->
 
+  <!-- Contact -->
   <div class="container" id="contact">
     <h1 class="center">contact</h1>
+    <p>843-814-9683 jmsong@g.cofc.edu</p>
+    <p>jacobmsong.blogspot.com github.com/jacobsong linkedin.com/in/jacobsong
+    </p>
   </div>
+  <!-- Contact - end -->
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
   <script src="main.js"></script>
+
 </body>
 
 </html>
