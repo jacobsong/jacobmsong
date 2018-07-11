@@ -3,9 +3,8 @@ body {
 }
 
 blockquote {
-  font-size: 2rem;
-  font-family: "Righteous", cursive;
-  border-color: #dd2c00;
+  font-size: 1.5rem;
+  border-color: #607d8b;
 }
 
 .profile {
@@ -17,8 +16,20 @@ blockquote {
   display: block;
 }
 
+.contact {
+  padding-top: 20%;
+}
+
+.contact a {
+  color: inherit;
+}
+
+.contact i:hover {
+  color: #607d8b;
+}
+
 .name {
-  font-family: "Permanent Marker", cursive !important;
+  font-family: "Righteous", cursive !important;
   font-size: 25px !important;
 }
 
@@ -51,7 +62,12 @@ blockquote {
 .tile {
   height: 150px;
   width: 150px;
-  padding: 10px;
+  padding: 18px;
+}
+
+.tile-img {
+  height: 95px;
+  width: 95px;
 }
 
 .pt0 {
@@ -59,17 +75,23 @@ blockquote {
 }
 
 .sidenav-clicked {
-  background-color: #dd2c00;
+  background-color: #607d8b;
 }
 
 .sidenav li a:hover {
-  background-color: #dd2c0070;
+  background-color: #607d8b88;
 }
 
 @media only screen and (max-width: 500px) {
   .tile {
     height: 6rem;
     width: 6rem;
+    padding: 12px;
+  }
+
+  .tile-img {
+    height: 45px;
+    width: 45px;
   }
 }
 
