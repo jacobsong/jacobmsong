@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
   const sideNav = document.querySelector(".sidenav");
   const collapsible = document.querySelector(".collapsible.expandable");
+  // const materialBoxed = document.querySelector(".materialboxed");
 
   M.Sidenav.init(sideNav);
   M.Collapsible.init(collapsible, { accordion: false });
+  // M.Materialbox.init(materialBoxed);
 
   showPage("aboutmebtn", "aboutme");
 });
@@ -27,4 +29,5 @@ function showPage(selectedElem, selectedPage) {
       document.getElementById(elem).classList.remove("sidenav-clicked");
     }
   }
+  window.scrollTo(0, 0);
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="img/favicon.png">
+  <link rel="icon" href="img/favicon.ico">
   <title>Jacob Song - Software Developer</title>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -68,7 +68,7 @@
       <div class="col s12 m12 l6">
         <div class="card card-min hoverable">
           <img class="work-logo responsive-img" src="img/lockheed-martin.png">
-          <div class="card-content pt0">
+          <div class="card-content pt-0">
             <span class="card-title">2014 - 2017</span>
             <ul class="browser-default list-padding">
               <li>Worked on GCSS-MC (custom Oracle EBS for the US Marine Corps)</li>
@@ -82,7 +82,7 @@
       <div class="col s12 m12 l6">
         <div class="card card-min hoverable">
           <img class="work-logo responsive-img" src="img/hpe.jpg">
-          <div class="card-content pt0">
+          <div class="card-content pt-0">
             <span class="card-title">2017 - Present</span>
             <ul class="browser-default list-padding">
               <li>Worked on RZ2 (recruiting web application for the US Army)</li>
@@ -100,7 +100,7 @@
       <div class="col s12 m4 l3">
         <div class="card hoverable">
           <img class="edu-logo responsive-img" src="img/cofc.jpg">
-          <div class="card-content pt0">
+          <div class="card-content pt-0">
             <span class="card-title">2010 - 2014</span>
             <p>BS Computer Science</p>
             <p>SC LIFE Scholarship</p>
@@ -165,7 +165,7 @@
             <div class="row">
               <div class="col s4 m4 l4 xl3">
                 <div class="card-panel tile">
-                  <img class="tile-img" src="img/vs-code-logo.png">
+                  <img class="tile-img" src="img/vscode.jpeg">
                   <span>VSCode</span>
                 </div>
               </div>
@@ -298,8 +298,33 @@
   <!-- Resume - end -->
 
   <!-- Portfolio -->
-  <div class="container" id="portfolio">
-    <h1 class="center">portfolio</h1>
+  <div class="container center-align" id="portfolio">
+    <div class="row grey-text text-darken-4 mt-20px">
+      <div class="col s12 mt-3 mb-3">
+        <a href="https://stark-headland-29060.herokuapp.com" target="__blank">
+          <img src="img/devbook.png" height="auto" width="60%">
+        </a>
+        <h5>Social Media Application</h5>
+        <p>
+          I created this application using a MERN stack. With this project I learned how to develop local authentication using passport
+          and bcrypt. I used Redux to manage application state and Mongoose to create models and store documents in MongoDB.
+        </p>
+      </div>
+    </div>
+    <div class="divider grey"></div>
+    <div class="row grey-text text-darken-4 mt-20px mb-last-portfolio">
+      <div class="col s12 mt-3 mb-3">
+        <a href="https://warm-ocean-41797.herokuapp.com" target="__blank">
+          <img src="img/survey.png" height="auto" width="60%">
+        </a>
+        <h5>Survey Email Application</h5>
+        <p>
+          This is a single page application that utilizes a MERN stack. This project helped me understand how payments work in a web
+          application using a third party service like Stripe and how OAUTH works. Also learned how emails are sent out using
+          services like SendGrid.
+        </p>
+      </div>
+    </div>
   </div>
   <!-- Portfolio - end -->
 
