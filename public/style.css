@@ -7,6 +7,40 @@ blockquote {
   border-color: #607d8b;
 }
 
+h5 {
+  font-family: "Oxygen";
+  font-size: 28px;
+  letter-spacing: -1px;
+  opacity: 0.97;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.2), 1px 1px rgba(0, 0, 0, 0.2);
+  /* font-family: "Coda"; */
+  /* font-family: "Lato"; */
+  /* font-family: "Open Sans"; */
+  /* font-family: "Coda Caption"; */
+  /* font-family: "Patua One"; */
+  /* font-family: "Poppins"; */
+  /* font-family: "Oswald"; */
+}
+
+#aboutme {
+  background-image: url(img/parallax1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.section {
+  color: white;
+  background-color: black;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.p-font {
+  font-family: "Lato";
+}
+
 .profile {
   max-height: 200px;
   height: auto;
