@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
   const sideNav = document.querySelector(".sidenav");
   const collapsible = document.querySelector(".collapsible.expandable");
-  const parallax = document.querySelectorAll(".parallax");
 
   M.Sidenav.init(sideNav);
   M.Collapsible.init(collapsible, { accordion: false });
-  M.Parallax.init(parallax);
 
   showPage("aboutmebtn", "aboutme");
 });
