@@ -1,8 +1,3 @@
-html,
-body {
-  height: 100%;
-}
-
 body {
   padding-left: 300px;
 }
@@ -29,8 +24,10 @@ h5 {
 
 #aboutme {
   height: 100%;
-  background-image: url(img/aboutme1.jpg);
+  background-image: url(img/aboutme2.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .img-box {
