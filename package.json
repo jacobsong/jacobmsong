@@ -5,7 +5,11 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build-html": "html-minifier",
+    "dev": "nodemon server.js",
+    "build-html": "html-minifier --remove-comments -o public/index.html src/index.html",
+    "build-css": "cleancss -o public/style.css src/style.css",
+    "build-js": "npx babel src/main.js -o src/main-babel.js && uglifyjs src/main-babel.js -m -o public/main.js && rm src/main-babel.js",
+    "build": "npm run build-html & npm run build-css && npm run build-js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +23,12 @@
   "homepage": "https://github.com/jacobsong/jacobmsong#readme",
   "dependencies": {
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "clean-css-cli": "^4.1.11",
+    "html-minifier": "^3.5.19",
+    "uglify-js": "^3.4.5"
   }
 }
