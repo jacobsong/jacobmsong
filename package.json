@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "build-html": "html-minifier --remove-comments -o public/index.html src/index.html",
-    "build-css": "cleancss -o public/style.css src/style.css",
+    "build-css": "cleancss --skip-rebase -o public/style.css src/style.css",
     "build-js": "npx babel src/main.js -o src/main-babel.js && uglifyjs src/main-babel.js -m -o public/main.js && rm src/main-babel.js",
     "build": "npm run build-html & npm run build-css && npm run build-js"
   },
