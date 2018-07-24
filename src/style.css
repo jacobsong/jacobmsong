@@ -19,7 +19,7 @@ h5 {
 #aboutme {
   min-height: inherit;
   overflow: auto;
-  background-image: url(/public/img/aboutme.jpg);
+  background-image: url(img/aboutme.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -179,7 +179,7 @@ h5 {
 
 @media only screen and (max-width: 750px) {
   #aboutme {
-    background-image: url(/public/img/aboutme-mobile.jpg);
+    background-image: url(img/aboutme-mobile.jpg);
     background-repeat: repeat;
     background-size: auto;
   }
