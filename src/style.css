@@ -94,6 +94,10 @@ h5 {
   font-size: 18px !important;
 }
 
+.card-panel > span {
+  display: block;
+}
+
 .work-logo {
   max-height: 140px;
   width: auto;
