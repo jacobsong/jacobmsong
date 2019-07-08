@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Jacob Song - Software Developer</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oxygen|Poppins|Righteous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="grey lighten-4">
+
+  
+  <ul id="slide-out" class="sidenav sidenav-fixed grey darken-4">
+    <li>
+      <div class="user-view center white-text">
+        <img class="profile" src="img/profile.png">
+        <span class="name">Jacob Song</span>
+        <span class="email">Software Developer</span>
+      </div>
+    </li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li id="aboutmebtn">
+      <a class="waves-effect sidenav-close white-text" onclick="showPage('aboutmebtn', 'aboutme')">
+        <i class="material-icons white-text">person_outline</i>About Me</a>
+    </li>
+    <li id="resumebtn">
+      <a class="waves-effect sidenav-close white-text" onclick="showPage('resumebtn', 'resume')">
+        <i class="material-icons white-text">event_note</i>Resume</a>
+    </li>
+    <li id="portfoliobtn">
+      <a class="waves-effect sidenav-close white-text" onclick="showPage('portfoliobtn', 'portfolio')">
+        <i class="material-icons white-text">code</i>Portfolio</a>
+    </li>
+    <li id="contactbtn">
+      <a class="waves-effect sidenav-close white-text" onclick="showPage('contactbtn', 'contact')">
+        <i class="material-icons white-text">phone_iphone</i>Contact</a>
+    </li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
+    <i class="material-icons grey-text text-darken-4 medium">menu</i>
+  </a>
+  
+
+  
+  <div id="aboutme">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m2 img-container">
+          <div class="img-box">
+            <img class="circle z-depth-5" src="img/seattle.jpg" height="100px" width="100px">
+          </div>
+        </div>
+        <div class="col s12 m10">
+          <p class="black-box">
+            <img class="circle z-depth-5 mobile-img" src="img/seattle.jpg" height="100px" width="100px"> I'm orginally from the Seattle area. I've lived in Alaska and South Carolina. I'm not afraid to get out of my
+            comfort zone which lets me explore new places and experience new things.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m10">
+          <p class="black-box">
+            <img class="circle z-depth-5 mobile-img" src="img/tech.png" height="100px" width="100px"> My passion for tech started when I was growing up as a curious kid. When I watched TV or turned on my N64, my
+            first thought would be "how does this work?". Technology seemed like the closest thing to magic. To this day
+            I'm still learning new things. When I'm not hunting down bugs or working on my own projects, I'm sitting on the
+            couch eating Cheez-Its and watching tech conferences on
+            <a href="https://www.youtube.com/channel/UCtxCXg-UvSnTKPOzLH4wJaQ" target="__blank">Coding Tech</a>.
+          </p>
+        </div>
+        <div class="col s12 m2 img-container">
+          <div class="img-box">
+            <img class="circle z-depth-5" src="img/tech.png" height="100px" width="100px">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m2 img-container">
+          <div class="img-box">
+            <img class="circle z-depth-5" src="img/game.png" height="100px" width="100px">
+          </div>
+        </div>
+        <div class="col s12 m10">
+          <p class="black-box">
+            <img class="circle z-depth-5 mobile-img" src="img/game.png" height="100px" width="100px"> My freetime usually consists of me yelling at the TV because I died from lag. I play a variety of games from
+            Super Smash Bros and Zelda to GTA and Battlefield. When I'm not gaming, I'm usually outside fishing or hiking
+            with my dogs and wife. Occasionally I'll get addicted to a new show on Netflix and binge watch every episode
+            (Breaking Bad, Walking Dead, SHIELD, Lost, Prison Break, etc.).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="container" id="resume">
+    <blockquote>Experience</blockquote>
+    <div class="row grey-text text-darken-3">
+      <div class="col s12 m12 l6">
+        <div class="card card-min hoverable">
+          <img class="work-logo responsive-img" src="img/lockheed-martin.png">
+          <div class="card-content pt-0">
+            <span class="card-title">2014 - 2017</span>
+            <ul class="browser-default list-padding">
+              <li>Worked on GCSS-MC (custom Oracle EBS for the US Marine Corps)</li>
+              <li>Used PL/SQL for development and modified Oracle design documents</li>
+              <li>Used Subversion for version control and Toad for IDE</li>
+              <li>Utilized Agile methodologies such as Sprint estimating/planning, daily standups, and 2 week sprints</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m12 l6">
+        <div class="card card-min hoverable">
+          <img class="work-logo responsive-img" src="img/hpe.jpg">
+          <div class="card-content pt-0">
+            <span class="card-title">2017 - Present</span>
+            <ul class="browser-default list-padding">
+              <li>Worked on RZ2 (recruiting web application for the US Army)</li>
+              <li>Implemented feature requests and bug fixes in Java EE on a Linux development environment</li>
+              <li>Utilized tools including Eclipse, Maven, SoapUI and JBoss</li>
+              <li>Implemented front-end changes using JSP, HTML, CSS, and JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <blockquote>Education</blockquote>
+    <div class="row grey-text text-darken-3">
+      <div class="col s12 m4 l4">
+        <div class="card hoverable">
+          <img class="edu-logo responsive-img" src="img/cofc.jpg">
+          <div class="card-content pt-0">
+            <span class="card-title">2010 - 2014</span>
+            <p>BS Computer Science</p>
+            <p>SC LIFE Scholarship</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <blockquote>Skills</blockquote>
+    <div class="row grey-text text-darken-3">
+      <ul class="collapsible expandable center-align">
+        <li class="active">
+          <div class="collapsible-header">
+            <i class="material-icons">arrow_drop_down</i>Languages
+          </div>
+          <div class="collapsible-body">
+            <div class="row">
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/html5-logo.png">
+                  <span>HTML</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/css3-logo.png">
+                  <span>CSS</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/javascript-logo.png">
+                  <span>JavaScript</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/java-logo.png">
+                  <span>Java</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/python-logo.png">
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/sql.png">
+                  <span>SQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">arrow_drop_down</i>Tools
+          </div>
+          <div class="collapsible-body">
+            <div class="row">
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/vscode.jpeg">
+                  <span>VSCode</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/eclipse.png">
+                  <span>Eclipse</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/postman.jpg">
+                  <span>Postman</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/bash.png">
+                  <span>Bash</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/soapui.png">
+                  <span>SoapUI</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/git.png">
+                  <span>Git</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/svn.png">
+                  <span>Subversion</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/maven.png">
+                  <span>Maven</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/jboss.png">
+                  <span>JBoss</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">arrow_drop_down</i>Frameworks/Libraries
+          </div>
+          <div class="collapsible-body">
+            <div class="row">
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/spring.png">
+                  <span>Spring</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/hibernate.png">
+                  <span>Hibernate</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/react-logo.png">
+                  <span>React</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/redux.png">
+                  <span>Redux</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/node-logo.png">
+                  <span>Node</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/express-logo.png">
+                  <span>Express</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/mongo-logo.png">
+                  <span>Mongoose</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">arrow_drop_down</i>Certifications
+          </div>
+          <div class="collapsible-body">
+            <div class="row">
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/comptia.png">
+                  <span>Security+</span>
+                </div>
+              </div>
+              <div class="col s4 m4 l4 xl3">
+                <div class="card-panel tile">
+                  <img class="tile-img" src="img/dod.png">
+                  <span class="truncate">Secret Clearance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+
+  
+  <div class="container center-align" id="portfolio">
+    <div class="row grey-text text-darken-4 mt-20px">
+      <div class="col s12 mt-3 mb-3">
+        <a href="https://stark-headland-29060.herokuapp.com" target="__blank">
+          <img class="hoverable" src="img/devbook.png" height="auto" width="60%">
+        </a>
+        <h5>Social Media Application</h5>
+        <p class="p-font">
+          I created this application using a MERN stack. With this project I learned how to develop local authentication using passport
+          and bcrypt. I used Redux to manage application state and Mongoose to create models and store documents in MongoDB.
+        </p>
+      </div>
+    </div>
+    <div class="divider grey"></div>
+    <div class="row grey-text text-darken-4 mt-20px mb-last-portfolio">
+      <div class="col s12 mt-3 mb-3">
+        <a href="https://warm-ocean-41797.herokuapp.com" target="__blank">
+          <img class="hoverable" src="img/survey.png" height="auto" width="60%">
+        </a>
+        <h5>Survey Email Application</h5>
+        <p class="p-font">
+          This is a single page application that utilizes a MERN stack. This project helped me understand how payments work in a web
+          application using a third party service like Stripe and how OAUTH works. Also learned how emails are sent out using
+          services like SendGrid.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="container center-align" id="contact">
+    <div class="contact">
+      <div class="row">
+        <div class="col s4 offset-s2">
+          <p>
+            <a href="tel:+8438149683">
+              <i class="fas fa-phone-square large"></i>
+            </a>
+            <br>
+            <span class="hide-on-small-only p-font">843-814-9683</span>
+          </p>
+        </div>
+        <div class="col s4">
+          <p>
+            <a href="mailto:jmsong@g.cofc.edu">
+              <i class="fas fa-envelope-square large"></i>
+            </a>
+            <br>
+            <span class="hide-on-small-only p-font">jmsong@g.cofc.edu</span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s4">
+          <a href="https://linkedin.com/in/jacobsong" target="__blank">
+            <i class="fab fa-linkedin large"></i>
+          </a>
+        </div>
+        <div class="col s4">
+          <a href="https://github.com/jacobsong" target="__blank">
+            <i class="fab fa-github-square large"></i>
+          </a>
+        </div>
+        <div class="col s4">
+          <a href="https://jacobmsong.blogspot.com" target="__blank">
+            <i class="fab fa-blogger large"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
